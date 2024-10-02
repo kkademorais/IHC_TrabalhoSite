@@ -1,29 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <h1>Universidade Federal de Catalão (UFCAT)</h1>
-        <img src="" alt="Logo UFCAT">
-    <h2>Restaurante Universitário (R.U.)</h2>
+    <meta name="description" content="Cardápio Semanal do Restaurante Universitário da Universidade Federal de Catalão">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RU - UFCAT</title>
 </head>
 <body>
-    <table>
-        <thead>
-            Almoço
-        </thead>
-        <tbody>
-            <thead>
-                Proteína
-                <td>
-                    Carne de Porco 
-                </td>
-            </thead>
-        </tbody>
-        <caption>
-            Menu Semanal do R.U.
-        </caption>
-    </table>
+    <header>
+        <h1>Universidade Federal de Catalão (UFCAT)</h1>
+        <img src="./image/ufcat-logo.png" alt="Logo UFCAT">
+        <h2>Restaurante Universitário (R.U.)</h2>
+    </header>
+    <main>
+        <!--Sobre UFCAT-->
+        <section>
+            <h2>Sobre a Universidade</h2>
+            <p>A Universidade Federal de Catalão (UFCAT) foi criada no ano de 2018, por desmembramento do Campus Regional Catalão da Universidade Federal de Goiás (UFG), contudo sua história tem mais de 40 anos. O Campus Catalão surgiu em 1982, através de um convênio firmado entre a Universidade Federal de Goiás e a Prefeitura Municipal de Catalão.</p>
+        </section>
+        <!--Sobre RU-->
+        <section>
+            <h2>Sobre o Resturante Universitário</h2>
+            <p>O Restaurante Universitário (RU) da Universidade Federal de Catalão - UFCAT oferece o serviço de alimentação e nutrição, fornecendo refeições de almoço e jantar, de segunda a sexta-feira, respectivamente, das 10h45min às 14h e das 18h30min às 21h10min, conforme o calendário acadêmico.</p>
+        </section>
+        <!--Cardápio Semanal - Refeição-->
+        <section>
+            <h2>Cardápio Semanal</h2>
+            <h3>Selecione a refeição que deseja visualizar: </h3>
+            <form>
+                <input type="radio" value="almoço" id="a" name="refeição">
+                <label for="a">Almoço</label><br>
+                <input type="radio" value="jantar" id="j" name="refeição">
+                <label for="j">Jantar</label>
+            </form>
+        </section>
+        <!--Cardápio Semanal - Dia da Semana-->
+        <section>
+            <h3>Selecione o dia da semana que deseja visualizar</h3>
+            <form>
+                <select name="dia-semana" id="dia-semana">
+                    <option value="seg">Segunda</option>
+                    <option value="ter">Terça</option>
+                    <option value="qua">Quarta</option>
+                    <option value="qui">Quinta</option>
+                    <option value="sex">Sexta</option>
+                </select>
+            </form>
+        </section>
+        <!--Cardápio-->
+        <section>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>
+                            Almoço
+                        </th>
+                        <th>
+                            Refeição do dia
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proteína</td>
+                        <td>Carne de Porco Barbecue / Grão de Bico ao Molho</td>
+                    </tr>
+                    <tr>
+                        <td>Guarnição</td>
+                        <td>Batata Sauté</td>
+                    </tr>
+                    <tr>
+                        <td>Arroz</td>
+                        <td>Arroz Branco / Arroz Integral</td>
+                    </tr>
+                    <tr>
+                        <td>Feijão</td>
+                        <td>Feijão Carioca / Feijão Preto</td>
+                    </tr>
+                    <tr>
+                        <td>Fruta</td>
+                        <td>Abacaxi</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <b>Horário: 11:00 - 14:00</b>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h4>Redes Socias</h4>
+        <p>Saiba mais em nossa <a href="https://www.instagram.com/ru.ufcat/?igshid=YmMyMTA2M2Y%3D" target="_blank">página oficial</a></p>
+    </footer>
 </body>
 </html>
